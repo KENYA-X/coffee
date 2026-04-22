@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cafe</title>
+    <link rel="stylesheet" href="coffee.css">
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h2>Coffee drip</h2>
+            <p>幸せなひとときを</p>
+        </div>
+        <img src="https://picsum.photos/seed/coffee/400/300" alt="カフェ画像">
+        <div class="menu">
+            <h2>メニューと料金</h2>
+            <p>コーヒー800円</p>
+            <p>ケーキセット1200円</p>
+            <p>紅茶500円</p>
+        </div>
+    <div class="access">
+        <h2>アクセス</h2>
+        <p>住所：東京都中央区銀座</p>
+        <p>営業時間：6:00~24:00年中無休</p>
+    </div>
+    <div>
+        <button onclick="yoyaku()">予約する</button>
+    </div>
+    <script>
+       function yoyaku() {
+         const result = confirm("予約しますか？");
+            if(result) {
+                alert("予約完了しました！");
+            } else {
+                alert("キャンセルしました");
+            }
+       }
+    </script>
+</body>
+</body>
+
+</html>
